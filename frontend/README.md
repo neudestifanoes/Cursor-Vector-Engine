@@ -7,7 +7,7 @@ The frontend is a **React-based** web interface that serves three main purposes:
 * **Networking:** Fetch API & WebSockets (for backend communication)
 * **Styling:** CSS / Inline Styles
 
-## 🚀 Setup & Run
+## Setup & Run
 
 1.  Navigate to the frontend directory:
     ```bash
@@ -23,7 +23,7 @@ The frontend is a **React-based** web interface that serves three main purposes:
     ```
 4.  Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📱 Features & Tabs
+## Features & Tabs
 
 The UI is organized into three main tabs:
 
