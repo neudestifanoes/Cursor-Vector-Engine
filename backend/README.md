@@ -2,7 +2,7 @@
 
 The backend is a machine-learning inference service built with **FastAPI**. It handles raw EEG data ingestion, feature extraction, and real-time classification using LDA and SVM models.
 
-## ⚙️ Core Components
+## Core Components
 
 ### 1. Synthetic EEG Generator (`mock_data.py`)
 Used for development when a headset is unavailable. It mathematically recreates SSVEP signals:
@@ -21,7 +21,7 @@ Trains and serializes the classifiers:
 * **Models:** Linear Discriminant Analysis (LDA) and SVM (RBF kernel).
 * **Output:** Saves models as `ssvep_lda_model.joblib` and `ssvep_svm_model.joblib`.
 
-## 🔌 API Endpoints (`app/main.py`)
+## API Endpoints (`app/main.py`)
 
 The server exposes two primary endpoints:
 
