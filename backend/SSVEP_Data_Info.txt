@@ -1,0 +1,31 @@
+#Format of SSVEP Data
+
+1. Channels (Number of Electrodes): 9 Channels
+- 9 occipital/parietal ElectrodesL PZ, P05, P03, P0z, P04, P06, 01, 0z, 02
+- 1 reference electrode at the vertex (not typically included in the main data channels)
+
+2. Sampling Rate (Hz): 256 Hz
+- Emotiv Pro Common Range: 128 - 256 Hz
+- In General: 128-1000 Hz
+- Higher sampling rate increases frequency resolution but requires larger datasets
+
+3. Time Series: 7 seconds (total)
+- Baseline: 2 seconds
+- Stimulus: 3 seconds
+- Rest: 2 seconds
+- Output a vector of voltages per time per Electrodes
+    - Ex: 5 seconds with sampling rate of 256 Hz --> 1280 samples per Channels
+
+4. Stimulus Frequencies
+- Up: 10 Hz
+- Down: 20 Hz
+- Left: 12 Hz
+- Right: 15 Hz
+
+5. Noise and Harmonics
+- SSVEP often contains noise and harmonics; include this as 2x/3x the frequency for realistic synthetic data
+
+6. Data Shape 
+- Channels x (Sampling Rate x Seconds): 9 x (256 x 7) = 9 x 1792 (9 Channels with 1792 Samples each)
+- # Samples = Sampling Rate x Seconds
+

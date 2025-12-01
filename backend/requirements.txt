@@ -1,0 +1,56 @@
+# Backend API and ML Pipeline Dependencies (Group A)
+
+# Web Framework
+fastapi>=0.104.0,<1.0.0
+uvicorn[standard]>=0.24.0,<1.0.0
+python-multipart>=0.0.6,<1.0.0
+
+# Alternative web framework option
+flask>=3.0.0,<4.0.0
+flask-cors>=4.0.0,<5.0.0
+
+# Database and Persistence
+sqlalchemy>=2.0.0,<3.0.0
+alembic>=1.12.0,<2.0.0
+
+# Machine Learning and Data Processing
+scikit-learn>=1.3.0,<2.0.0
+numpy>=1.21.0,<2.0.0
+pandas>=1.5.0,<3.0.0
+scipy>=1.9.0,<2.0.0
+joblib>=1.3.0,<2.0.0
+
+# Model serialization and persistence
+pickle-mixin>=1.0.2,<2.0.0
+dill>=0.3.7,<1.0.0
+
+# Data validation
+pydantic>=2.4.0,<3.0.0
+marshmallow>=3.20.0,<4.0.0
+
+# HTTP client for external APIs
+httpx>=0.25.0,<1.0.0
+requests>=2.31.0,<3.0.0
+
+# Async support
+asyncio>=3.4.3
+aiofiles>=23.0.0,<24.0.0
+
+# Logging and monitoring
+structlog>=23.0.0,<24.0.0
+python-json-logger>=2.0.0,<3.0.0
+
+# Configuration management
+python-dotenv>=1.0.0,<2.0.0
+pyyaml>=6.0,<7.0
+
+# Error tracking (optional)
+sentry-sdk[fastapi]>=1.38.0,<2.0.0
+
+# Performance monitoring
+psutil>=5.9.0,<6.0.0
+
+# Testing
+pytest>=7.4.0,<8.0.0
+pytest-asyncio>=0.21.0,<1.0.0
+httpx>=0.25.0,<1.0.0  # For testing FastAPI endpoints
