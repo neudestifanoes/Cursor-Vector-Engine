@@ -2,7 +2,7 @@
 
 The frontend is a **React-based** web interface that serves three main purposes: visualizing backend system health, presenting SSVEP visual stimuli to the user, and demonstrating real-time cursor control.
 
-## 🛠 Tech Stack
+## Tech Stack
 * **Framework:** React (Create-React-App)
 * **Networking:** Fetch API & WebSockets (for backend communication)
 * **Styling:** CSS / Inline Styles
