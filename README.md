@@ -4,7 +4,7 @@ This repository contains a **brain-computer interface (BCI)** designed to decode
 
 The system is designed around an **OpenBCI Cyton + Ultracortex Mark IV** setup and currently operates using a high-fidelity synthetic data generator for development and testing.
 
-## 🏗 System Architecture
+##  System Architecture
 
 The project is divided into three distinct layers functioning as an end-to-end pipeline:
 
@@ -12,13 +12,13 @@ The project is divided into three distinct layers functioning as an end-to-end p
 2.  **Streaming Layer:** Handles data acquisition. Currently, it replays synthetic trials to simulate a live EEG headset. Future integration will connect directly to the OpenBCI Cyton board.
 3.  **Backend (Analysis):** Receives raw EEG, extracts Welch PSD features, and uses trained LDA/SVM models to predict the user's intent.
 
-## 📂 Repository Structure
+##  Repository Structure
 
 * **`backend/`**: FastAPI server, feature extraction logic, and Machine Learning models (LDA/SVM).
 * **`frontend/`**: React-based dashboard for system health, visual stimuli, and cursor control.
 * **`streaming/`**: Scripts for mocking "live" EEG data streams and replaying trials.
 
-## 🚀 Quick Start
+##  Quick Start
 
 To run the full stack, you will need to start the backend server and the frontend client simultaneously.
 
