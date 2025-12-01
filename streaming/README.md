@@ -2,7 +2,7 @@
 
 The streaming layer handles the data acquisition pipeline. Currently, it simulates an online experiment by replaying synthetic trials, acting as a stand-in for the OpenBCI Cyton board.
 
-## 📂 Components
+## Components
 
 ### `config.py`
 Centralizes shared settings to ensure consistency with the backend.
@@ -20,7 +20,7 @@ Simulates a live session.
 2.  **Simulates Time:** Waits `TRIAL_DURATION` (7 seconds) between requests to mimic real-time data collection.
 3.  **Predicts:** Sends the data to the backend and prints the returned prediction and confidence scores.
 
-## 🚦 Usage
+## Usage
 
 To test the system without a headset:
 
